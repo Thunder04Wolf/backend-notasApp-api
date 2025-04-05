@@ -7,7 +7,7 @@ app.use(cors());
 app.use(express.json());
 
 // Conexión a MongoDB en EC2 (sin credenciales)
-const DB_URI = 'mongodb://18.118.33.70:27017/colegio'; // Reemplaza con la IP de tu EC2
+const DB_URI = 'mongodb://3.144.86.131/colegio'; // Reemplaza con la IP de tu EC2
 
 mongoose.connect(DB_URI)
     .then(() => console.error('✅ Conectado a MongoDB (sin credenciales)'))
